@@ -1,4 +1,5 @@
 # task2
+import sys
 
 def task2(file1, file2):
     with open(file1) as f1, open(file2) as f2:
@@ -10,5 +11,6 @@ def task2(file1, file2):
             elif (x - a) ** 2 + (y - b) ** 2 == r ** 2 : print(0)
             elif (x - a) ** 2 + (y - b) ** 2 > r ** 2 : print(2)
 
-task2(input(), input())
+
+task2(*sys.argv[1:])
 
